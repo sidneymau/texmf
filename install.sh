@@ -22,6 +22,6 @@ for package in "${packages[@]}"; do
 		if [[ -d $__latex/$package && ! -L $__latex/$package ]]; then
 			rm -irv "$__latex/$package"
 		fi
-		ln -sv "$PWD/$package" "$__latex/$package"
+		ln -sv "$PWD/tex/latex/$package" "$__latex/$package"
 	fi
 done
